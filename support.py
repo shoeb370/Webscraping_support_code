@@ -1,5 +1,7 @@
 # pip install selenium
 # pip install openpyxl
+# pip install webdriver-manager
+# pip install beautifulsoup4
 import openpyxl 
 import pandas as pd
 from selenium import webdriver
