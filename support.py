@@ -24,4 +24,9 @@ table1 = source.find('table')
 if table1 != None:
     df_spec_temp = pd.read_html(str(table1))[0]
 
-    
+# Get the HTML content of the element
+element_html = element.get_attribute('outerHTML')
+
+# Parse the HTML using BeautifulSoup
+soup = BeautifulSoup(element_html, 'html.parser')
+soup.find('a')['href']    
